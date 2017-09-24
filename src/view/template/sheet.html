@@ -1,0 +1,11 @@
+<div id="foot">
+	<ul>
+		<li  ng-repeat='data in bookdata' ><img ng-src="{{flag===$index?data.bimg:data.img}}"></li>
+	</ul>
+	<ul>
+		<li  ui-sref="main({id:'0'})">首页</li>
+		<li  ui-sref="xq({id:'1'})">文章</li>
+		<li ui-sref="zj({id:'2'})">足迹</li>
+		<li  ui-sref="cart({id:'3'})">购物车</li>
+	</ul>
+</div>

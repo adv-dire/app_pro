@@ -1,0 +1,22 @@
+<div id="auto_img">
+	<div class="autoimg_main">
+	 <div class="swiper-container" id="autoimg">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"  ng-repeat='item in data'>
+           <img ng-src="" data-ui-lazyload="{{item.img}}">
+            </div>
+        </div>
+    </div>
+		<!--
+		<ul>
+		<li ng-repeat="item in data"><img ng-src="{{item.img}}"></li>
+		<li ng-repeat="item in autoimg"><img id="autoimg" ng-src="{{item.img}}"></li>
+		<li><img src="/image/banner2.png"></li>
+		<li><img src="/image/banner3.png"></li>
+		<li><img src="/image/banner4.png"></li>
+		<li><img src="/image/banner1.jpg"></li>
+		</ul>
+		-->
+
+	</div>
+</div>

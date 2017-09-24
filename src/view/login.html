@@ -1,0 +1,21 @@
+<div id="login">
+<div class="login_main">
+	<form name="form">
+		<div class="user">
+			<i><img src="image/用户名.png"></i>
+			<input name="phone" validator="required,phone" ng-model="user.phone" type="text" placeholder="请输入手机">
+
+		</div>
+		<div class="pas">
+			<i><img src="image/密码.png"></i>
+			<input name="password" validator="required,password" ng-model="user.password" type="password" placeholder="请输入密码">
+		</div>
+	</form>
+	<div class="login_lbtn">
+		<button validation-submit="form" ng-click="submit();">登陆</button>
+	</div>
+	<div class="register">
+		<button ui-sref="register">注册</button>
+	</div>
+</div>
+</div>

@@ -1,0 +1,125 @@
+@import 'template/search.less';
+@import 'template/autoimg.less';
+@import 'color.less';
+@import 'template/nav.less';
+@import 'template/content.less';
+@import 'template/tuijian.less';
+@import 'template/course.less';
+@import 'template/tab.less';
+@import 'template/top.less';
+@import 'template/sheet.less';
+@import 'template/pldata.less';
+@import 'template/pushbox.less';
+@import 'book.less';
+@import 'xq.less';
+@import 'template/tabcontent.less';
+@import 'purchasingpage.less';
+@import 'login.less';
+@import 'me.less';
+.ng-enter {
+  transition:0.5s linear all;
+  opacity:0;
+}
+
+.ng-enter-active {
+  opacity:1;
+}
+
+.fs(@px) {
+  font-size: unit(@px / 37.5, rem);
+}
+
+.w(@px){
+  width: unit(@px / 37.5, rem);
+}
+
+.h(@px) {
+  height: unit(@px / 37.5, rem);
+}
+.m-t(@px){
+	margin-top:unit(@px / 37.5, rem);
+}
+.m-b(@px){
+	margin-bottom:unit(@px / 37.5, rem);
+}
+.position-fixed(@px){
+	position:fixed;
+	left:0;
+	top:unit(@px/37.5,rem);
+}
+.position-absolute(){
+	position:absolute;
+}
+.left(@px){
+	left:unit(@px/37.5,rem);
+	}
+	.top(@px){
+	top:unit(@px/37.5,rem);
+	}
+	.right(@px){
+	right:unit(@px/37.5,rem);
+	}
+.m-l(@px){
+	margin-left:unit(@px / 37.5, rem);
+}
+.m-r(@px){
+	margin-right:unit(@px / 37.5, rem);
+}
+.p-t(@px){
+	padding-top:unit(@px / 37.5, rem);
+}
+.p-l(@px){
+	padding-left:unit(@px / 37.5, rem);
+}
+.p-r(@px){
+	padding-right:unit(@px / 37.5, rem);
+}
+.p-b(@px){
+	padding-bottom:unit(@px / 37.5, rem);
+}
+.f-l{
+	float:left;
+}
+.f-right{
+	float:right;
+}
+.p-f{
+	position:fixed;
+}
+.p-R{
+position:relative;
+}
+.p-A{
+position:absolute;
+}
+.lh(@px){
+	line-height:unit(@px/37.5,rem);
+}
+.t-ag{
+	 text-align: center;
+}
+*{
+	padding:0;
+	margin:0;
+}
+html,body{
+  width: 100%;
+  margin: 0;
+  padding:0;
+ background: rgba(240,240,240,.5);
+  .fs(16);
+}
+button {
+  border-width: 0;
+  outline-width: 0;
+}
+input{
+	outline:none;
+	outline-width:0;
+
+} 
+.select{
+	//color:red;
+	//background:url(../image/首页_b.png);
+	background-color:red;
+}

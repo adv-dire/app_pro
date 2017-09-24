@@ -1,0 +1,46 @@
+
+<div id="purchasingpage">
+	<div class="pur_bookimg">
+		 <div class="swiper-container" id="bookimg">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide" ng-repeat='data in purdata'>
+            <img ng-src="{{data.positionList.img}}">
+            </div>
+        </div>
+    </div>
+	</div>
+	<div class="pur_info">
+		<div class="swiper-container" id="info">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide stop-swiping" ng-repeat='data in purdata' >
+    <div class="info_one">
+    	<p>WEB前端攻城狮</p>
+    	<p>{{data.positionList.pay}}付款</p>
+    	<p>{{data.positionList.des}}</p>
+    	<div>
+    	<p>试读</p>
+    	<p><span>{{data.positionList.oldprice}}</span><span>￥{{data.positionList.newprice}}</span></p>
+    	</div>
+    	<p>现在购买等于挣了10个大洋</p>
+    	</div>
+    	<div class="comments">
+    		<p>网友评星</p>
+    		<p><img src="image/星.png"><img src="image/星.png"><img src="image/星.png"><img src="image/星.png"><img src="image/星.png"></p>
+    	</div>
+    	<div class="introduction">
+    	<p>WEB前端应学习那些知识?</p>
+    	<p>(以下内容不代表本人观点)</p>
+    	<ul>
+    		<li>模块1:基础入门阶段</li>
+    		<li>模块2:web移动开发–html5、css3</li>
+    		<li>模块3:html5游戏—html5、canvas</li>
+    		<li>模块4：用js去做传统java 、.NET、 PHP才能做的数据库操作,服务器编程—ajaxnode.js</li>
+    		<li>模块5:大型BS、云计算、项目开发（比如淘宝，京东）–面向对象、设计模式、大型项目分层架构思想(比如MVC，MVVM)、js框架、web前端架构、js组件...</li>
+    	</ul>
+    	</div>
+    </div>
+  </div>
+</div>
+	</div>
+</div>
+<div id="purfoot" ng-click='back();'>返回</div>

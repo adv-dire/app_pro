@@ -1,0 +1,20 @@
+
+[
+{
+	"img":"image/首页.png",
+	"bimg":"image/首页_b.png"
+},
+{
+	"img":"image/客服.png",
+	"bimg":"image/客服_b.png"
+	
+},
+{
+	"img":"image/足迹.png",
+	"bimg":"image/足迹_b.png"
+},
+{
+	"img":"image/购物车.png",
+	"bimg":"image/购物车_b.png"
+}
+]

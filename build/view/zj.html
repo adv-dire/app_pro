@@ -1,0 +1,14 @@
+<div id='xq_head'>
+	<div class="xq_search">
+		<span><img src="image/搜索.png"></span>
+		<span>说你想说,想你所想</span>
+		<span>分亨</span>
+	</div>
+	<div class="xq_tab">
+		<ul>
+			<li ng-click='Clitab($index);' ng-repeat='item in tabdata'>{{item.name}}</li>
+		</ul>
+	</div>
+	</div>
+<div app-tabcontent show='hide' dttext="准备开车,车不等人,快去点击...上车" text="不要做空空,快去点击空红心添加足迹吧" toggle='tg' tabdt="dongtdata" tabrm="remdata" tabfx="foundData"></div>
+<div app-sheet></div>

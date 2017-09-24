@@ -1,0 +1,13 @@
+<div id="pldata" ng-click="dd();">
+	
+	<div    ng-repeat="item in bookdata | filterpx:order[0].ord:order[0].des | filterByObj:filterObj " class="pldata_book" ui-sref="purchasing({idx:item.positionList.id})">
+		<div  class="pldata_book_left">
+			<img data-ui-lazyload="{{item.positionList.img}}"  ng-src="">
+		</div>
+		<div class="pldata_book_right">
+			<p>{{item.positionList.des}}</p>
+			<p><span>￥{{item.positionList.newprice}}</span><span>￥{{item.positionList.oldprice}}</span></p>
+			<p><span>{{item.positionList.post}}</span><span>{{item.positionList.pay}}人付款</span><span>{{item.positionList.adss}}</span></p>
+		</div>
+	</div>
+</div>

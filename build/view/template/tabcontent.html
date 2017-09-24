@@ -1,0 +1,48 @@
+<div id="tabcontent" ng-click='onClosebox({event:$event});'>
+<div class="swiper-container">
+   <div class="swiper-scrollbar"></div>
+  <div class="swiper-wrapper">
+    <div class="swiper-slide">
+    <div class="shuji" ng-repeat="data in tabdt | orderBy:'zt'">
+    	<div class="p-R"><i><img data-ui-lazyload="{{data.img}}" ng-src=""></i><span>{{data.from}}</span><i><img ng-click=' $event.stopPropagation();onTab({id:$index,event:$event})' ng-src="{{data.rightimg}}"></i>
+        <div ng-if="selected==$index" class="pushbox">
+            <p ng-click='$event.stopPropagation();onNinter();'>不感兴趣</p>
+            <p ng-click='$event.stopPropagation();onFlytf({id:$index});'>飞到足迹</p>
+        </div>
+    	</div>
+     <div class="shuji_title">
+    		<p>{{data.title}}</p>
+    		<p>{{data.content}}</p>
+    		<p><span>{{data.zt}}赞同</span><span>{{data.pl}}评论</span><span>{{data.promble}}</span></p>
+     </div>
+
+    </div>
+    <span class="dynamics" ng-if="show" ng-bind="dttext"></span>
+    </div>
+    <div class="swiper-slide">
+    <div ng-repeat="item in tabrm |orderBy:'time'" class="swiper_slide_page02">
+    <p>{{item.title}}</p>
+    <p><span>{{item.name}}</span><span>{{item.time}}小时前</span></p>
+    <p><span><img ng-src="{{item.img}}"></span><span>{{item.dzsum}}</span><span><img ng-src="{{item.plimg}}"></span><span>{{item.plsum}}</span><span>#前端</span></p>
+    <div class="heart">
+        <img ng-click="$event.stopPropagation();onCli({name:$index});" ng-src="{{active===$index?pathimg:item.heart}}">
+
+    </div>
+    </div>
+ <span class="h" ng-if="toggle" ng-bind="text"></span>
+    </div>
+    <div class="swiper-slide">
+        <div ng-repeat="item in tabfx" class="swiper-slide_page03">
+        <div class="page-left">
+            <p>{{item.title}}</p>
+            <p><span>{{item.name}}</span><span>{{item.canyu}}参与</span></p>
+            <p><img src="image/星.png"><img src="image/星.png"><img src="image/星.png"><img src="image/星.png"><img src="image/星.png"><img src="image/星2.png"><i>￥{{item.price}}</i></p>
+        </div>
+        <div class="page-right">
+            <img ng-src="{{item.img}}">
+        </div>
+    </div>
+  </div>
+
+</div>
+</div>
